@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="ko">                
+    <head>                       
+        <title>14_레이아웃.html</title> 
+    </head>
+    <body>                       
+        <!-- 레이아웃 -->
+        <div id="wrap" style="background-color:blue;">#wrap 전체블럭
+            <div id="header" style="background-color: red;">#header 머리말(대분류)</div>
+            <div id="container" style="background-color:deeppink;">#container 컨테이너
+                <div id="sub" style="background-color:aqua;">#sub 중분류</div>
+                <div id="main" style="background-color:green;">#main 본문내용</div>
+            </div>
+            <div id="footer" style="background-color:coral;">#footer 꼬리말</div>
+        </div>
+        <hr>
+        
+        <!-- 연습) 동행복권 웹페이지 레이아웃 -->
+        <!-- 참조 https://dhlottery.co.kr/ -->
+        <div id="wrap">
+            <div id="header">
+                <div>
+                       <span>동행복권</span>
+                       <form>
+                            <input type="button" value="로그인">
+                            <input type="button" value="회원가입">
+                        </form>
+                </div>
+                <div>
+                    <h1>대분류</h1>        
+                    <ul>
+                        <li>복권정보</li>
+                        <li>당첨결과</li>
+                        <li>판매점</li>
+                    </ul>
+                </div>                
+            </div><!--header end-->
+            
+            <div id="container">
+                <div id="sub">
+                    <h2>복권정보</h2> <!--중분류-->
+                    <ul>
+                        <li>로또소개</li>
+                        <li>구매안내</li>
+                        <li>추첨안내</li>
+                    </ul>
+                </div><!--sub end-->
+                <div id="main">
+                    <h3>본문내용</h3>
+                    <table border="1">
+                    <tr>
+                        <td>
+                            언제 어디서나 즐기는 로또
+                            로또 6/45는 (주)동행복권과 판매점 계약을 체결한 로또 단말기가 설치된 판매점
+                            (전국의 편의점, 복권방 및 가판대 등)과 ㈜동행복권 인터넷 홈페이지에서 구매하실 수 있습니다.
+                        </td>
+                    </tr>
+                    </table>                    
+                </div><!--main end-->
+            </div><!--container end-->
+            
+            <div id="footer">
+                <h1>꼬리말</h1>
+                <ul>
+                    <li>이용약관</li>
+                    <li>개인정보처리방침</li>
+                    <li>지급기준</li>
+                </ul>
+            </div><!--footer end-->         
+        </div><!--wrap end-->
+        
+    </body>                      
+</html>                         

@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html lang="ko">                
+    <head>                       
+        <title>12_form.html</title> 
+    </head>
+    <body>                       
+        <!--
+             하나의 HTML문서에 여러개의 폼양식이 있는 경우!!
+             - form 선언이 잘된 경우
+               <form></form>
+               <form></form>
+               <form></form>
+               
+             - form 선언이 잘못된 경우
+               <form>
+                       <form></form>
+               </form>     
+        -->
+        
+        <!--
+            <form> 관련 속성들
+            id=""       폼 아이디
+            name=""     폼 이름
+            method=""   전송방식 get 또는 post
+            action=""   사용자가 입력 요청한 정보를 서버측에서 받는 페이지명 또는 명령어
+            enctype=""  파일을 첨부해서 전송하는 경우
+        -->
+        <h3>폼 관련 속성들</h3>
+        <form id="bbsfrm" name="bbsfrm" method="post" action="ok.jsp">
+            <input type="submit" value="확인">
+            <hr>
+            
+            <img src="../images/devil.png">
+            <hr>
+            <!-- <img src=''> + type=submit 기능 -->
+            <input type="image" src="../images/angel.png">
+            
+            <!-- HTML페이지에서 노출되지는 않지만 form에 포함된 컨트롤 요소 -->
+            <input type="hidden" id="page" name="page" value="3">
+            <input type="hidden" id="col"  name="col"  value="subject">
+        </form>
+        
+        <!-- 파일 첨부해서 전송 -->
+        <form enctype="multipart/form-data">
+            첨부파일 : <input type="file">
+        </form>
+        <hr>
+        
+        <!-- 참조 https://www.w3schools.com/html/html_form_input_types.asp -->
+        <h3>다양한  Input Types</h3>
+        <form>
+            <input type="color">
+            <input type="date">
+            <input type="email">
+            <input type="number">
+            <input type="range">
+            <input type="search">
+            <input type="time">
+        </form>
+        <hr>
+        
+        <h3>Input Type Number</h3>
+        <form>
+            <label for="quantity">Quantity (between 1 and 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+        </form>
+        
+        <h3>Input Type Range</h3>
+        <form>
+          <label for="vol">Volume (between 0 and 50):</label>
+          <input type="range" id="vol" name="vol" min="0" max="50">
+        </form>                
+        
+    </body>                      
+</html>  

@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html lang="ko">                
+    <head>                       
+        <title>05_이미지.html</title> 
+    </head>
+    <body>                       
+        <!--
+            이미지(.png .jpg .gif) 추가
+            <img src="경로명+파일명">
+            <img src="경로명+파일명" />
+            
+            1)상대경로(현재 문서가 저장되어 있는 폴더 기준)
+              images/       현재 폴더안에서 하위폴더 images
+              ./images/     현재 폴더안에서 하위폴더 images
+              ../images/    현재 폴더안에서 상위폴더 images
+              ../../images/ 현재 폴더안에서 상위의 상위폴더 images
+              
+            2)절대경로(웹에서 홈디렉토리(root)부터 시작)
+        -->
+        
+        <img src="../images/k7.png">
+        <hr>
+        <img src="../images/k6.png">
+        <hr>
+        <img src="../images/k5.png" width="150px" height="100px">
+        <hr>
+        <img src="../images/k5.png" width="150px"> <!-- 크기에 대한 기준은 가로(width)-->
+        <hr>
+        <img src="../images/k4.png" width="50%" height="50%">
+        
+        <!-- 테두리선 -->
+        <img src="../images/k3.png" border="2px">
+        <hr>
+        <img src='../images/k2.png' border='0'>
+    
+    </body>                      
+</html>  
